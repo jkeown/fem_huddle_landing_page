@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: #ffffffe6;
+  font-family: "Open Sans", sans-serif;
+  flex: 1;
+}
+header {
+  padding: 2rem;
+}
+.logo {
+  max-width: 150px;
+}
+.background-main {
+  background-color: rgba(103, 75, 175, 0.93);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-size: contain;
+  width: 100vw;
+  min-height: 100vh;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-image img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+.register {
+  color: var(--white);
+  padding: 2rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.button {
+  background: var(--white);
+  border-color: var(--white);
+  border-radius: 25px;
+  color: var(--violet);
+  width: 75%;
+  margin: 2rem 0;
+  padding: 10px 0;
+  font-weight: 400;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.425);
+  max-width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+  color: var(--white);
+}
+h1,
+.button {
+  font-family: "Poppins", sans-serif;
+}
+.icons {
+  margin-top: 2rem;
+}
+.icons svg {
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+.icons svg:hover {
+  border-color: var(--soft-magenta);
+  fill: var(--soft-magenta);
+}
+#instagram:hover {
+  fill: none;
+  stroke: var(--soft-magenta);
+}
+footer {
+  padding: 0.5rem 3rem;
+}
+footer a {
+  text-decoration: underline;
+}
+@media (min-width: 600px) {
+  .background-main {
+    padding: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .background-main {
+    background-image: url(images/bg-desktop.svg);
+  }
+  header {
+    margin: 0 auto;
+  }
+  .main-content {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  .main-image {
+    max-width: 60%;
+  }
+  .register {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 40%;
+    padding-left: 0;
+  }
+  .register h1 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  .register p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .icons {
+    align-self: flex-end;
+  }
+}
