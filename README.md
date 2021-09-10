@@ -35,7 +35,7 @@ Mobile version
 ### Links
 
 - Solution URL: [Github](https://github.com/jkeown/fem_huddle_landing_page)
-- Live Site URL: [Github Page](https://github.com/jkeown/fem_huddle_landing_page)
+- Live Site URL: [Github Page](https://jkeown.github.io/fem_huddle_landing_page/)
 
 ## My process
 
