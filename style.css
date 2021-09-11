@@ -37,6 +37,9 @@ header {
   height: 100%;
   padding: 1rem 2rem;
 }
+.main-image h1 {
+  display: none;
+}
 .register {
   color: var(--white);
   padding: 2rem;
